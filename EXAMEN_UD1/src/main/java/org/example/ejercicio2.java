@@ -11,6 +11,10 @@ public class ejercicio2 {
         int aa =0;
         int la =0;
 
+        System.out.println("Introduce tu nombre:");
+        String nom = entrada.next();
+        System.out.println("La obra de " + nom);
+
         while(tc == true) {
             try {
                 System.out.println("Introduce el ancho de la pared:");
@@ -28,7 +32,7 @@ public class ejercicio2 {
             }
         }
 
-        if(ap < 0 || lp < 0 || aa < 0 || la < 0){
+        if(ap <= 0 || lp <= 0 || aa <= 0 || la <= 0){
             System.out.println("No pueden ser valores negativos.");
         }else{
             if(aa == la){
